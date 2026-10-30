@@ -5,6 +5,7 @@ Repositório base do ecossistema THE EMPYREAN, concebido para centralizar arquit
 ## Visão geral
 
 Este projeto nasce como matriz organizacional para um ecossistema composto por:
+
 - aplicações e interfaces (`apps/`)
 - serviços, APIs e agentes (`services/`)
 - bibliotecas, CLIs, gateways MCP e pacotes reutilizáveis (`packages/`)
