@@ -1,9 +1,24 @@
 {
   "files.watcherExclude": {
-    "**/apps/**/*.app/**": true
+    "**/apps/**/*.app/**": true,
+    "**/.Spotlight-V100/**": true,
+    "**/.Trashes/**": true,
+    "**/.fseventsd/**": true,
+    "**/.TemporaryItems/**": true
   },
   "search.exclude": {
-    "**/apps/**/*.app/**": true
-  }
+    "**/apps/**/*.app/**": true,
+    "**/.Spotlight-V100/**": true,
+    "**/.Trashes/**": true,
+    "**/.fseventsd/**": true,
+    "**/.TemporaryItems/**": true
+  },
+  "git.ignoredRepositories": [
+    "apps/Antigravity",
+    "config",
+    "docs",
+    "infra",
+    "scripts"
+  ]
 }
 
