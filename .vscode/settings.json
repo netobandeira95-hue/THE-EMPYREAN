@@ -19,6 +19,6 @@
     "docs",
     "infra",
     "scripts"
-  ]
+  ],
+  "git.ignoreLimitWarning": true
 }
-
