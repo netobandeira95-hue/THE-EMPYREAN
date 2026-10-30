@@ -1,14 +1,98 @@
+# ==============================================================================
+# THE-EMPYREAN — Proteção Zero-Leak (.gitignore Mestre)
+# ==============================================================================
+
+# 1. Variáveis de Ambiente e Segredos
 .env
+**/.env
+.env.*
+**/.env.*
+!.env.example
+!**/.env.example
+
+# 2. Dados Processados, Bases de Domínio, Datasets de Pesquisa e Planilhas
+data/processed/
+data/raw/
+data/models/
+**/domain_databases/
+**/research_datasets/
+**/personal_vault/
+*.csv
+**/*.csv
+*.xlsx
+**/*.xlsx
+
+# 3. Storages de Serviços, Bancos de Dados Locais e Chaves Criptográficas
+services/project-nomad/storage/
+**/storage/
+**/qdrant_storage/
+*.sqlite
+**/*.sqlite
+*.sqlite3
+**/*.sqlite3
+*.db
+**/*.db
+*.mv.db
+**/*.mv.db
+*.key
+**/*.key
+*.pem
+**/*.pem
+*.crt
+**/*.crt
+*.p12
+**/*.p12
+*.cer
+**/*.cer
+*.pfx
+**/*.pfx
+config/certs/*
+!config/certs/.gitkeep
+
+# 4. Volumes de Containers, Binários Pesados, IDE Portátil e Arquivos Legados
 *_data/
 *_conf/
 *_work/
 *_db/
 *_letsencrypt/
 *.raw
+*.vsix
+**/*.vsix
+apps/Antigravity IDE.app/
+apps/Antigravity-Data/
+apps/Antigravity/xtool/Antigravity.app/
+apps/nexus-portal/vendor/
+infra/docker/docker-engine/
+packages/toolchains/
+packages/vsix-installers/
+packages/archive/
+
+# 5. Dependências, Ambientes Virtuais e Caches
 node_modules/
+**/node_modules/
+.venv/
+**/.venv/
+venv/
+**/venv/
+env/
+**/env/
+__pycache__/
+**/__pycache__/
+*.pyc
+.cache/
+**/.cache/
+.wrangler/
+**/.wrangler/
+
+# 6. Metadados do macOS e Volumes Externos
 .DS_Store
+**/.DS_Store
 ._*
+**/._*
 .Spotlight-V100/
 .Trashes/
 .fseventsd/
-
+.TemporaryItems/
+.DocumentRevisions-V100/
+.git_sub_bak/
+**/.git_sub_bak/
